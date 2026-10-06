@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>InuyashaLocalServer</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net35</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="heroLvUpConfig.bin" />
+    <None Remove="PlayerLevel.bin" />
+    <None Remove="StageConfig.bin" />
+    <None Remove="CharmLevel.bin" />
+    <None Remove="heroAwakeConfig.bin" />
+    <None Remove="shadowConfig_D.bin" />
+    <EmbeddedResource Include="heroLvUpConfig.bin" LogicalName="heroLvUpConfig.bin" />
+    <EmbeddedResource Include="PlayerLevel.bin" LogicalName="PlayerLevel.bin" />
+    <!-- 关卡权威表：rewards = [[itemId, num], ...]，itemId 4 = 玩家经验（角色经验）。
+         用它取代原先把通关经验写死成 150 的做法。 -->
+    <EmbeddedResource Include="StageConfig.bin" LogicalName="StageConfig.bin" />
+    <!-- 魅力等级表：只读出每个英雄 1..20 级的 charmDemand/promote，
+         用于回应 4120 CharmLvUpRequest（而不是让客户端拿到空响应 NRE）。 -->
+    <EmbeddedResource Include="CharmLevel.bin" LogicalName="CharmLevel.bin" />
+    <!-- 觉醒表：客户端 HeroBase 用裸索引器 m_heroAwakeConfig[tempid*100+qualityLv]，
+         品质超出表范围（每个英雄只有 0..9）就直接 NullReferenceException。
+         服务端必须按这张表封顶，否则点几下铸灵就把界面点死。 -->
+    <EmbeddedResource Include="heroAwakeConfig.bin" LogicalName="heroAwakeConfig.bin" />
+    <!-- 残影表（两层结构：残影组 1..4 → 英雄 → 属性/解锁材料）。 -->
+    <EmbeddedResource Include="shadowConfig_D.bin" LogicalName="shadowConfig_D.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>..\verify_patched\device_managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Inuyasha">
+      <HintPath>..\verify_patched\device_managed\Inuyasha.dll</HintPath>
+    </Reference>
+    <Reference Include="XEngineManager">
+      <HintPath>..\verify_patched\device_managed\XEngineManager.dll</HintPath>
+    </Reference>
+    <Reference Include="XEngineNetWork">
+      <HintPath>..\verify_patched\device_managed\XEngineNetWork.dll</HintPath>
+    </Reference>
+    <Reference Include="XEngineBase">
+      <HintPath>..\verify_patched\device_managed\XEngineBase.dll</HintPath>
+    </Reference>
+    <Reference Include="XEngine">
+      <HintPath>..\verify_patched\device_managed\XEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>..\verify_patched\device_managed\mscorlib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

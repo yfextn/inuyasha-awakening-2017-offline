@@ -1,0 +1,94 @@
+犬夜叉·觉醒 2017 单机离线服务端 · 非商业许可
+Inuyasha Awakening 2017 Offline Local Server · Non-Commercial License
+版本 / Version: 1.0
+版权 / Copyright (c) 2026 本项目贡献者 / Project contributors
+
+────────────────────────────────────────────────────────────
+中文
+────────────────────────────────────────────────────────────
+
+一、授权范围
+在遵守本许可全部条款的前提下，任何人都可以免费：
+  1. 使用、复制、修改本项目源码（下称"本软件"）；
+  2. 将本软件用于个人学习、研究、逆向工程练习与离线单机游玩；
+  3. 以非商业目的再分发本软件或其修改版，但必须：
+     a. 保留本许可文件与版权声明；
+     b. 明确标注修改内容与修改者；
+     c. 不得删除或隐藏本许可中的任何限制。
+
+二、禁止商业化（核心条款）
+严禁将本软件或其任何衍生作品用于任何商业用途，包括但不限于：
+  1. 出售、租赁、订阅收费，或作为付费产品/服务的一部分提供；
+  2. 架设对外运营的私服并收取任何费用，或通过内购、广告、赞助、
+     打赏、会员等方式变现；
+  3. 预装、捆绑到任何商业硬件、商业软件或收费下载渠道中分发；
+  4. 以本软件为基础提供付费的技术支持、代搭建、代运营服务。
+
+三、游戏资源与第三方权利
+  1. 《犬夜叉·觉醒》游戏及其全部美术、音频、文本、配置、代码的著作权
+     归原权利人所有，本许可**不授予**任何与游戏资源相关的权利。
+  2. 本仓库不包含任何游戏资源。使用者必须自行合法拥有该游戏。
+  3. 使用者因使用本软件而产生的任何法律责任，由使用者自行承担。
+
+四、免责声明
+本软件按"现状"提供，不附带任何明示或默示的担保，包括但不限于对
+适销性、特定用途适用性及不侵权的担保。在任何情况下，作者或版权
+持有人均不对因本软件或本软件的使用而产生的任何索赔、损害或其他
+责任负责。
+
+五、终止
+一旦违反本许可任何条款，授权自动终止，你必须立即停止使用并删除
+本软件的全部副本。
+
+六、其他
+本许可未尽事宜，以中文文本为准。
+
+────────────────────────────────────────────────────────────
+English
+────────────────────────────────────────────────────────────
+
+1. Grant
+Subject to all terms below, everyone is free to:
+   a. use, copy and modify this project's source code (the "Software");
+   b. use the Software for personal study, research, reverse-engineering
+      practice and offline single-player play;
+   c. redistribute the Software or modified versions for NON-COMMERCIAL
+      purposes only, provided that you keep this license and the copyright
+      notice, clearly state your changes, and do not remove or hide any
+      restriction contained herein.
+
+2. Non-Commercial Restriction (core term)
+Any commercial use of the Software or of any derivative work is strictly
+prohibited, including but not limited to:
+   a. selling, renting or charging subscription fees, or including the
+      Software in a paid product or service;
+   b. running a public game server for any fee, or monetizing through
+      in-app purchases, advertising, sponsorship, donations or membership;
+   c. pre-installing or bundling the Software into commercial hardware,
+      commercial software, or paid download channels;
+   d. offering paid support, deployment or operation services based on
+      the Software.
+
+3. Game Assets and Third-Party Rights
+   a. All rights to the game *Inuyasha Awakening* and its art, audio, text,
+      configuration and code belong to the original rights holder. This
+      license grants NO rights whatsoever to game assets.
+   b. This repository contains no game assets. You must legally own the
+      game yourself.
+   c. You are solely responsible for any legal consequences of your use.
+
+4. Disclaimer
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+5. Termination
+Any violation of these terms terminates your rights automatically; you must
+immediately stop using the Software and delete all copies.
+
+6. Miscellaneous
+In case of conflict between the Chinese and English texts, the Chinese text
+prevails.

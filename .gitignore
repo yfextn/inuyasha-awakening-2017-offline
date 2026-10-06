@@ -1,0 +1,40 @@
+# 构建产物 / build output
+bin/
+obj/
+out/
+*.user
+*.suo
+
+# 游戏资源与二进制：版权不属于本仓库，禁止提交
+*.apk
+*.apks
+*.obb
+*.dll
+*.exe
+*.so
+*.arsc
+*.assets
+*.bundle
+*.7z
+*.bin
+!src/server/*.bin
+*.keystore
+*.jks
+*.p12
+*.der
+*.rsa
+*.sf
+*.mf
+
+# 本地工具链（自备，不入库）
+tools/dotnet/
+tools/7zr.exe
+
+# 临时与调试产物
+__pycache__/
+*.pyc
+*.log
+*.png
+*.tgz
+*.zip
+!docs/*.md
